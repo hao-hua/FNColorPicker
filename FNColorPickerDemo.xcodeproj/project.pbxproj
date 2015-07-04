@@ -14,6 +14,10 @@
 		10B93CB21B45662F00FC5A63 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10B93CB11B45662F00FC5A63 /* Images.xcassets */; };
 		10B93CB51B45662F00FC5A63 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10B93CB31B45662F00FC5A63 /* LaunchScreen.xib */; };
 		10B93CC11B45662F00FC5A63 /* FNColorPickerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B93CC01B45662F00FC5A63 /* FNColorPickerDemoTests.m */; };
+		10B93CCD1B4566AE00FC5A63 /* FNColorPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B93CCC1B4566AE00FC5A63 /* FNColorPicker.m */; };
+		10B93CD01B456CE400FC5A63 /* colorPanImg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10B93CCF1B456CE400FC5A63 /* colorPanImg@2x.png */; };
+		10B93CD31B45724F00FC5A63 /* FNImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B93CD21B45724F00FC5A63 /* FNImageView.m */; };
+		10B93CD61B4578FF00FC5A63 /* FNImageViewSelectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 10B93CD51B4578FF00FC5A63 /* FNImageViewSelectView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,13 @@
 		10B93CBA1B45662F00FC5A63 /* FNColorPickerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FNColorPickerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		10B93CBF1B45662F00FC5A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10B93CC01B45662F00FC5A63 /* FNColorPickerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FNColorPickerDemoTests.m; sourceTree = "<group>"; };
+		10B93CCB1B4566AE00FC5A63 /* FNColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNColorPicker.h; sourceTree = "<group>"; };
+		10B93CCC1B4566AE00FC5A63 /* FNColorPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNColorPicker.m; sourceTree = "<group>"; };
+		10B93CCF1B456CE400FC5A63 /* colorPanImg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "colorPanImg@2x.png"; sourceTree = "<group>"; };
+		10B93CD11B45724F00FC5A63 /* FNImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNImageView.h; sourceTree = "<group>"; };
+		10B93CD21B45724F00FC5A63 /* FNImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNImageView.m; sourceTree = "<group>"; };
+		10B93CD41B4578FF00FC5A63 /* FNImageViewSelectView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FNImageViewSelectView.h; sourceTree = "<group>"; };
+		10B93CD51B4578FF00FC5A63 /* FNImageViewSelectView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FNImageViewSelectView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +92,7 @@
 		10B93CA31B45662F00FC5A63 /* FNColorPickerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				10B93CCA1B45667800FC5A63 /* FNColorPicker */,
 				10B93CA81B45662F00FC5A63 /* AppDelegate.h */,
 				10B93CA91B45662F00FC5A63 /* AppDelegate.m */,
 				10B93CAB1B45662F00FC5A63 /* ViewController.h */,
@@ -117,6 +129,28 @@
 				10B93CBF1B45662F00FC5A63 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		10B93CCA1B45667800FC5A63 /* FNColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				10B93CCE1B456CA800FC5A63 /* Resources */,
+				10B93CCB1B4566AE00FC5A63 /* FNColorPicker.h */,
+				10B93CCC1B4566AE00FC5A63 /* FNColorPicker.m */,
+				10B93CD11B45724F00FC5A63 /* FNImageView.h */,
+				10B93CD21B45724F00FC5A63 /* FNImageView.m */,
+				10B93CD41B4578FF00FC5A63 /* FNImageViewSelectView.h */,
+				10B93CD51B4578FF00FC5A63 /* FNImageViewSelectView.m */,
+			);
+			path = FNColorPicker;
+			sourceTree = SOURCE_ROOT;
+		};
+		10B93CCE1B456CA800FC5A63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				10B93CCF1B456CE400FC5A63 /* colorPanImg@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +235,7 @@
 			files = (
 				10B93CB01B45662F00FC5A63 /* Main.storyboard in Resources */,
 				10B93CB51B45662F00FC5A63 /* LaunchScreen.xib in Resources */,
+				10B93CD01B456CE400FC5A63 /* colorPanImg@2x.png in Resources */,
 				10B93CB21B45662F00FC5A63 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +254,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B93CD31B45724F00FC5A63 /* FNImageView.m in Sources */,
 				10B93CAD1B45662F00FC5A63 /* ViewController.m in Sources */,
 				10B93CAA1B45662F00FC5A63 /* AppDelegate.m in Sources */,
+				10B93CD61B4578FF00FC5A63 /* FNImageViewSelectView.m in Sources */,
 				10B93CA71B45662F00FC5A63 /* main.m in Sources */,
+				10B93CCD1B4566AE00FC5A63 /* FNColorPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

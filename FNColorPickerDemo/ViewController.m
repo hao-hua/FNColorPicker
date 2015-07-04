@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "FNColorPicker.h"
+
+#define   BLUE   [UIColor colorWithRed:38.0f/255.0f green:145.0/255.0f blue:244.0f/255.0f alpha:1.0f]
 
 @interface ViewController ()
 
@@ -16,7 +19,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self.view setBackgroundColor:[UIColor whiteColor]];
+    
+    FNColorPicker *fnColorPicker = [[FNColorPicker alloc] initWithFrame:CGRectMake(50, 40, self.view.frame.size.width-100, 1.5*(self.view.frame.size.width-100))];
+    [fnColorPicker setCenter:self.view.center];
+    [fnColorPicker.layer setCornerRadius:10.0];
+    [fnColorPicker setMainColor:BLUE];
+    [self.view addSubview:fnColorPicker];
 }
 
 - (void)didReceiveMemoryWarning {
